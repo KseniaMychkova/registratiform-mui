@@ -18,7 +18,7 @@ function Registration() {
     }
 
     const isValid = () => {
-        if (!/^[a-z0-9\-=+*%$#!]+@+[a-z]+.[a-z]+$/gm.test(inpEmail)) throw new Error('Введена не корректная почта')
+        if (!/^[a-z0-9\-=+*%$#!]+@+[a-z]+\.[a-z]+$/gm.test(inpEmail)) throw new Error('Введена не корректная почта')
         if (inpPassword !== inpConfPassword) throw new Error('Пароли не совпадают')
     }
 
